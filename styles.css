@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Vidaloka&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutAnimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 * {
     scroll-behavior: smooth;
 }
@@ -76,7 +94,7 @@ body {
 #banner {
     width: 800px;
     overflow-x: hidden;
-    position: relative;
+    position: fixed;
     z-index: -2;
     float: left;
 }
@@ -157,12 +175,15 @@ body {
 }
 
 .speaker_grid_pic {
-    padding: 2%;
+    padding: 0% 2% 0% 2%;
     margin: 0%;
 }
 
 .speakerrow {
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 42px;
+    margin-bottom: 42px;
 }
 
 .speakerpic {
@@ -278,8 +299,8 @@ body {
 }
 
 .contactpad {
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 6vw;
+    margin-right: 0px;
 }
 
 #Name {
@@ -315,6 +336,44 @@ body {
     display: block;
 }
 
+.footericon {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name {
+    float: left;
+    margin-right: 48px;
+}
+
+.mail {
+    float: left;
+    margin-right: 0%;
+    padding-left: 0%;
+}
+
+.form-group {
+    padding: 0%;
+}
+
+.namepill {
+    text-align: left;
+    background-color: #efeeee;
+    font-size: 120%;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 25px;
+    padding: 6.8px 15px;
+    position: relative;
+    top: -50px;
+    left: -20px;
+    display: none;
+}
+
 @media only screen and (max-width: 1200px) {
     .speakerpic {
         width: 150px;
@@ -348,12 +407,16 @@ body {
     }
     #Msg {
         position: relative;
-        top: -40px;
+        top: -90px;
         left: 14px;
     }
     .contactsubmit {
         position: relative;
         top: 60px;
+    }
+    .respond {
+        position: relative;
+        top: 50px;
     }
 }
 
