@@ -374,6 +374,11 @@ body {
     display: none;
 }
 
+#name4 {
+    font-size: 90%;
+    padding: 10.2px 15px;
+}
+
 @media only screen and (max-width: 1200px) {
     .speakerpic {
         width: 150px;
@@ -417,6 +422,9 @@ body {
     .respond {
         position: relative;
         top: 50px;
+    }
+    .namepill {
+        display: block;
     }
 }
 
@@ -486,5 +494,11 @@ body {
     }
     .featuredp {
         width: 350px;
+    }
+    .cwithus {
+        font-size: 250%;
+    }
+    .speaker_grid {
+        margin-left: 11vw;
     }
 }
