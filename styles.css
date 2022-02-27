@@ -318,12 +318,6 @@ body {
     left: 14px;
 }
 
-.contactsubmit {
-    height: 40px;
-    padding-top: 4px;
-    border-radius: 20px;
-}
-
 #contact_form {
     margin-top: 30px;
 }
@@ -360,6 +354,17 @@ body {
     padding: 0%;
 }
 
+.form-group {
+    padding-left: 13%;
+    padding-top: 25px;
+    width: 70%
+}
+
+.form-control {
+    border-radius: 0%;
+    border-width: 1.5px;
+}
+
 .namepill {
     text-align: left;
     background-color: #efeeee;
@@ -374,14 +379,113 @@ body {
     display: none;
 }
 
+.sns {
+    width: 65px;
+    margin: 10px 20px 10px 20px;
+}
+
+#snsdiv {
+    margin-left: 220px;
+}
+
+.nav-link:hover {
+    animation: underline forwards 0.2s;
+}
+
+#contact_form {
+    padding-top: 190px;
+    margin-top: 20px;
+}
+
+.contactsubmit {
+    border-radius: 25px;
+    margin-left: 200px;
+    margin-top: 30px;
+    width: 180px;
+    height: 45px;
+    margin-bottom: 20px;
+}
+
+#footer {
+    margin-bottom: 0%;
+    background-color: #efeeee;
+    text-align: center;
+    padding: 4vh;
+    font-family: 'Vidaloka', serif;
+}
+
 #name4 {
     font-size: 90%;
     padding: 10.2px 15px;
 }
 
+#name2 {
+    font-size: 90%;
+    padding: 10.2px 15px;
+}
+
+#name3 {
+    font-size: 90%;
+    padding: 10.2px 15px;
+}
+
+#name5 {
+    font-size: 119%;
+}
+
+#name6 {
+    font-size: 93%;
+    padding: 10.2px 15px;
+}
+
+#name11 {
+    font-size: 95%;
+    padding: 10.2px 15px;
+}
+
+#name12 {
+    font-size: 92%;
+    padding: 10.2px 15px;
+}
+
+#readlessevent1 {
+    display: none;
+}
+
+#readlessevent2 {
+    display: none;
+}
+
+.readmore {
+    border-radius: 25px;
+    height: 50px;
+    margin-left: 50px;
+}
+
+.peer-spacing {
+    margin-bottom: 20px;
+}
+
 @media only screen and (max-width: 1200px) {
     .speakerpic {
         width: 150px;
+    }
+    #snsdiv {
+        margin-left: 200px;
+    }
+}
+
+@media only screen and (max-width: 858px) {
+    #contact_form {
+        padding-top: 100px;
+    }
+    .contactsubmit {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #snsdiv {
+        margin-left: 100px;
     }
 }
 
@@ -391,6 +495,9 @@ body {
     }
     .featuredp {
         width: 400px;
+    }
+    #snsdiv {
+        margin-left: 80px;
     }
 }
 
@@ -416,8 +523,17 @@ body {
         left: 14px;
     }
     .contactsubmit {
-        position: relative;
-        top: 60px;
+        margin-left: 80px;
+        margin-top: 30px;
+        width: 200px;
+        height: 50px;
+    }
+    #contact_form {
+        padding-top: 0px;
+    }
+    .ourcontact {
+        margin: 0%;
+        padding-top: 5%;
     }
     .respond {
         position: relative;
@@ -500,5 +616,20 @@ body {
     }
     .speaker_grid {
         margin-left: 11vw;
+    }
+    .contactsubmit {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 30px;
+        width: 200px;
+        height: 50px;
+    }
+    #contact_form {
+        padding-top: 0px;
+    }
+    .ourcontact {
+        margin: 0%;
+        padding-top: 5%;
     }
 }
