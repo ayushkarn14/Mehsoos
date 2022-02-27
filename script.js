@@ -1,7 +1,27 @@
 $('.navbar-nav>li>a').on('click', function() {
     $('.navbar-collapse').collapse('hide');
 });
+const btn_more_event1 = document.getElementById("readmoreevent1");
+const btn_less_event1 = document.getElementById("readlessevent1");
+const btn_more_event2 = document.getElementById("readmoreevent2");
+const btn_less_event2 = document.getElementById("readlessevent2");
+btn_more_event1.onclick = function() {
+    btn_more_event1.style.display = "none";
+    btn_less_event1.style.display = "block";
+};
 
+btn_more_event2.onclick = function() {
+    btn_more_event2.style.display = "none";
+    btn_less_event2.style.display = "block";
+};
+btn_less_event1.onclick = function() {
+    btn_less_event1.style.display = "none";
+    btn_more_event1.style.display = "block";
+};
+btn_less_event2.onclick = function() {
+    btn_less_event2.style.display = "none";
+    btn_more_event2.style.display = "block";
+};
 var observerhome = new IntersectionObserver(function(entries) {
     if (entries[0].isIntersecting === true) {
         console.log('Speaker');
@@ -47,7 +67,7 @@ var observerhome = new IntersectionObserver(function(entries) {
         document.getElementById("connectnav").style.borderBottom = "3px solid #ffc107";
 
     }
-}, { threshold: [0.8] });
+}, { threshold: [0.5] });
 observerhome.observe(document.querySelector("#connect"));
 
 
