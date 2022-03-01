@@ -5,6 +5,8 @@ const btn_more_event1 = document.getElementById("readmoreevent1");
 const btn_less_event1 = document.getElementById("readlessevent1");
 const btn_more_event2 = document.getElementById("readmoreevent2");
 const btn_less_event2 = document.getElementById("readlessevent2");
+const btn_more_event3 = document.getElementById("readmoreevent3");
+const btn_less_event3 = document.getElementById("readlessevent3");
 btn_more_event1.onclick = function() {
     btn_more_event1.style.display = "none";
     btn_less_event1.style.display = "block";
@@ -21,6 +23,14 @@ btn_less_event1.onclick = function() {
 btn_less_event2.onclick = function() {
     btn_less_event2.style.display = "none";
     btn_more_event2.style.display = "block";
+};
+btn_less_event3.onclick = function() {
+    btn_less_event3.style.display = "none";
+    btn_more_event3.style.display = "block";
+};
+btn_more_event3.onclick = function() {
+    btn_more_event3.style.display = "none";
+    btn_less_event3.style.display = "block";
 };
 var observerhome = new IntersectionObserver(function(entries) {
     if (entries[0].isIntersecting === true) {
